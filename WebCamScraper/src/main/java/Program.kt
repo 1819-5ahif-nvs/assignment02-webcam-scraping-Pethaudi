@@ -1,8 +1,9 @@
 import org.jsoup.Jsoup
+import java.io.File
 import java.time.LocalDateTime
 
 fun main(args: Array<String>) {
-    scrap()
+    while(true) scrap()
 }
 
 fun scrap() {
@@ -12,6 +13,11 @@ fun scrap() {
             .get()
 
     val videolink = website.getElementById("fer_video").getElementsByTag("source").attr("src")
+    log(getLogEntry(videolink))
 }
 
-fun getLogEntry(s: String) = LocalDateTime.now().toString() + " " + s
+fun getLogEntry(s: String) = LocalDateTime.now().toString() + " " + s + "\n"
+
+fun log(s: String) {
+    File("linklog.txt").appendText(s)
+}
