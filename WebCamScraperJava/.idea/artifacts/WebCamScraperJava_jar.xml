@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WebCamScraperJava:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebCamScraperJava_jar</output-path>
+    <root id="archive" name="WebCamScraperJava.jar">
+      <element id="module-output" name="WebCamScraperJava" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
